@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{78AC0506-3674-4CAD-BD54-A605736ABF8E}</ProjectGuid>
+    <RootNamespace>WewEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)Libs\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(Platform)_$(Configuration)\</IntDir>
+    <LibraryPath>$(SolutionDir)Logging\Libs\$(Platform)_$(Configuration)\;$(SolutionDir)OS\Libs\$(Platform)_$(Configuration)\;$(ProjectDir)Libs\SDL2-2.0.4\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_ttf-2.0.14\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_mixer-2.0.1\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_image-2.0.1\lib\$(PlatformShortName)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)Libs\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(Platform)_$(Configuration)\</IntDir>
+    <LibraryPath>$(SolutionDir)Logging\Libs\$(Platform)_$(Configuration)\;$(SolutionDir)OS\Libs\$(Platform)_$(Configuration)\;$(ProjectDir)Libs\SDL2-2.0.4\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_ttf-2.0.14\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_mixer-2.0.1\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_image-2.0.1\lib\$(PlatformShortName)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)Libs\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(Platform)_$(Configuration)\</IntDir>
+    <LibraryPath>$(SolutionDir)Logging\Libs\$(Platform)_$(Configuration)\;$(SolutionDir)OS\Libs\$(Platform)_$(Configuration)\;$(ProjectDir)Libs\SDL2-2.0.4\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_ttf-2.0.14\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_mixer-2.0.1\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_image-2.0.1\lib\$(PlatformShortName)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)Libs\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)Temp\$(Platform)_$(Configuration)\</IntDir>
+    <LibraryPath>$(SolutionDir)Logging\Libs\$(Platform)_$(Configuration)\;$(SolutionDir)OS\Libs\$(Platform)_$(Configuration)\;$(ProjectDir)Libs\SDL2-2.0.4\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_ttf-2.0.14\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_mixer-2.0.1\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_image-2.0.1\lib\$(PlatformShortName)\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Utils/Source/;$(ProjectDir)Libs\SDL2-2.0.4\include;$(ProjectDir)Libs\SDL2_ttf-2.0.14\include;$(ProjectDir)Libs\SDL2_image-2.0.1\include;$(ProjectDir)Libs\SDL2_mixer-2.0.1\include;$(ProjectDir)Libs\lua-5.3.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>Utils.lib;OS.lib;SDL2.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;lua53.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)Utils\Libs\$(Platform)_$(Configuration)\;$(SolutionDir)OS\Libs\$(Platform)_$(Configuration)\;$(ProjectDir)Libs\SDL2-2.0.4\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_ttf-2.0.14\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_mixer-2.0.1\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_image-2.0.1\lib\$(PlatformShortName)\;$(projectDir)Libs\lua-5.3.3\lib\$(PlatformShortName)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 /ignore:4006 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Utils/Source/;$(ProjectDir)Libs\SDL2-2.0.4\include;$(ProjectDir)Libs\SDL2_ttf-2.0.14\include;$(ProjectDir)Libs\SDL2_image-2.0.1\include;$(ProjectDir)Libs\SDL2_mixer-2.0.1\include;$(ProjectDir)Libs\lua-5.3.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>Utils.lib;OS.lib;SDL2.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;lua53.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)Utils\Libs\$(Platform)_$(Configuration)\;$(SolutionDir)OS\Libs\$(Platform)_$(Configuration)\;$(ProjectDir)Libs\SDL2-2.0.4\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_ttf-2.0.14\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_mixer-2.0.1\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_image-2.0.1\lib\$(PlatformShortName)\;$(projectDir)Libs\lua-5.3.3\lib\$(PlatformShortName)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 /ignore:4006 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Utils/Source/;$(ProjectDir)Libs\SDL2-2.0.4\include;$(ProjectDir)Libs\SDL2_ttf-2.0.14\include;$(ProjectDir)Libs\SDL2_image-2.0.1\include;$(ProjectDir)Libs\SDL2_mixer-2.0.1\include;$(ProjectDir)Libs\lua-5.3.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Utils.lib;OS.lib;SDL2.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;lua53.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)Utils\Libs\$(Platform)_$(Configuration)\;$(SolutionDir)OS\Libs\$(Platform)_$(Configuration)\;$(ProjectDir)Libs\SDL2-2.0.4\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_ttf-2.0.14\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_mixer-2.0.1\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_image-2.0.1\lib\$(PlatformShortName)\;$(projectDir)Libs\lua-5.3.3\lib\$(PlatformShortName)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 /ignore:4006 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)Utils/Source/;$(ProjectDir)Libs\SDL2-2.0.4\include;$(ProjectDir)Libs\SDL2_ttf-2.0.14\include;$(ProjectDir)Libs\SDL2_image-2.0.1\include;$(ProjectDir)Libs\SDL2_mixer-2.0.1\include;$(ProjectDir)Libs\lua-5.3.3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>Utils.lib;OS.lib;SDL2.lib;SDL2_image.lib;SDL2_mixer.lib;SDL2_ttf.lib;lua53.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)Utils\Libs\$(Platform)_$(Configuration)\;$(SolutionDir)OS\Libs\$(Platform)_$(Configuration)\;$(ProjectDir)Libs\SDL2-2.0.4\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_ttf-2.0.14\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_mixer-2.0.1\lib\$(PlatformShortName)\;$(ProjectDir)Libs\SDL2_image-2.0.1\lib\$(PlatformShortName)\;$(projectDir)Libs\lua-5.3.3\lib\$(PlatformShortName)\</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ignore:4221 /ignore:4006 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Actor\Actor.h" />
+    <ClInclude Include="Source\Actor\ActorComponent.h" />
+    <ClInclude Include="Source\Actor\ActorComponent\CollisionComponent.h" />
+    <ClInclude Include="Source\Actor\ActorComponent\PlayerControllerComponent.h" />
+    <ClInclude Include="Source\Actor\ActorComponent\ScriptComponent.h" />
+    <ClInclude Include="Source\Actor\ActorComponent\SpriteRenderComponent.h" />
+    <ClInclude Include="Source\Actor\ActorComponent\TransformComponent.h" />
+    <ClInclude Include="Source\Actor\ActorFactory.h" />
+    <ClInclude Include="Source\Actor\ActorManager.h" />
+    <ClInclude Include="Source\Application.h" />
+    <ClInclude Include="Source\AudioPlayer\AudioPlayer.h" />
+    <ClInclude Include="Source\Camera\Camera.h" />
+    <ClInclude Include="Source\ComponentIds.h" />
+    <ClInclude Include="Source\EventSystem\BaseEventData.h" />
+    <ClInclude Include="Source\EventSystem\EventManager.h" />
+    <ClInclude Include="Source\GameLogic\IGameLogic.h" />
+    <ClInclude Include="Source\GameLogic\TurnBasedPuzzleGameLogic.h" />
+    <ClInclude Include="Source\Image\Image.h" />
+    <ClInclude Include="Source\Renderer\Renderer.h" />
+    <ClInclude Include="Source\Renderer\RendererSDL.h" />
+    <ClInclude Include="Source\Tools\IDGenerator.h" />
+    <ClInclude Include="Source\Tools\ResourceCache.h" />
+    <ClInclude Include="Source\Struct\Point.h" />
+    <ClInclude Include="Source\Struct\Rect.h" />
+    <ClInclude Include="Source\tinyxml2.h" />
+    <ClInclude Include="Source\WDataLoader\WDataLoader.h" />
+    <ClInclude Include="Source\WewEngineStd.h" />
+    <ClInclude Include="Source\World\GameObject.h" />
+    <ClInclude Include="Source\World\Map.h" />
+    <ClInclude Include="Source\World\Terrain.h" />
+    <ClInclude Include="Source\World\Tile.h" />
+    <ClInclude Include="Source\World\World.h" />
+    <ClInclude Include="Source\XMLLoader_Temp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Actor\Actor.cpp" />
+    <ClCompile Include="Source\Actor\ActorComponent.cpp" />
+    <ClCompile Include="Source\Actor\ActorComponent\CollisionComponent.cpp" />
+    <ClCompile Include="Source\Actor\ActorComponent\PlayerControllerComponent.cpp" />
+    <ClCompile Include="Source\Actor\ActorComponent\ScriptComponent.cpp" />
+    <ClCompile Include="Source\Actor\ActorComponent\SpriteRenderComponent.cpp" />
+    <ClCompile Include="Source\Actor\ActorComponent\TransformComponent.cpp" />
+    <ClCompile Include="Source\Actor\ActorFactory.cpp" />
+    <ClCompile Include="Source\Actor\ActorManager.cpp" />
+    <ClCompile Include="Source\AudioPlayer\AudioPlayer.cpp" />
+    <ClCompile Include="Source\Camera\Camera.cpp" />
+    <ClCompile Include="Source\EventSystem\BaseEventData.cpp" />
+    <ClCompile Include="Source\EventSystem\EventManager.cpp" />
+    <ClCompile Include="Source\Application.cpp" />
+    <ClCompile Include="Source\GameLogic\TurnBasedPuzzleGameLogic.cpp" />
+    <ClCompile Include="Source\Image\Image.cpp" />
+    <ClCompile Include="Source\Renderer\RendererSDL.cpp" />
+    <ClCompile Include="Source\Struct\Point.cpp" />
+    <ClCompile Include="Source\tinyxml2.cpp" />
+    <ClCompile Include="Source\WDataLoader\WDataLoader.cpp" />
+    <ClCompile Include="Source\World\GameObject.cpp" />
+    <ClCompile Include="Source\World\Map.cpp" />
+    <ClCompile Include="Source\World\Terrain.cpp" />
+    <ClCompile Include="Source\World\Tile.cpp" />
+    <ClCompile Include="Source\World\World.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

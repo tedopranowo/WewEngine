@@ -1,0 +1,23 @@
+<? xml version="1.0" encoding="utf-8" ?>
+<ActorList>
+	<Actor>
+		<Data>../Actor/Player.xml</Data>
+		<Position x="5" y="5" />
+	</Actor>
+	<Actor>
+		<Data>../Actor/Bandit.xml</Data>
+		<Position x="1" y="3" /> 
+	</Actor>
+	<Actor>
+		<Data>../Actor/Bandit.xml</Data>
+		<Position x="5" y="0" />
+	</Actor>
+	<Actor>
+		<Data>../Actor/Bird.xml</Data>
+		<Position x="4" y="4" />
+	</Actor>
+	<Actor>
+		<Data>../Actor/Fish.xml</Data>
+		<Position x="1" y="2" />
+	</Actor>
+</ActorList>

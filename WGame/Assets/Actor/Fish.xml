@@ -1,0 +1,14 @@
+<? xml version="1.0" encoding="utf-8" ?>
+
+<Actor>
+	<Tag>WaterUnit</Tag>
+	<Components>
+		<SpriteRenderComponent>
+			<Image>Fish.png</Image>
+		</SpriteRenderComponent>
+		<ScriptComponent>
+			<Script>RandomAi.lua</Script>
+		</ScriptComponent>
+		<CollisionComponent/>
+	</Components>
+</Actor>

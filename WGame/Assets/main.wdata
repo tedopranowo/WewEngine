@@ -1,0 +1,4 @@
+World
+Map = Level/StartingMap.wdata
+ActorList = Level/StartingMapActorList.xml
+BGM = Music/World 1.wav

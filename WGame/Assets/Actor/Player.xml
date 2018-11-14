@@ -1,0 +1,12 @@
+<? xml version="1.0" encoding="utf-8" ?>
+
+<Actor>
+	<Tag>Ground</Tag>
+	<Components>
+		<SpriteRenderComponent>
+			<Image>Player.png</Image>
+		</SpriteRenderComponent>
+		<PlayerControllerComponent/>
+		<CollisionComponent/>
+	</Components>
+</Actor>
